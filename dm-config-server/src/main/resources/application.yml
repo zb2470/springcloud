@@ -1,0 +1,17 @@
+server:
+  port: 7900
+spring:
+  application:
+    name: dm-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/dashuren/config-demo.git
+          username: 247027590@qq.com
+          password: lityu06155
+          search-paths: config-file
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7776/eureka/

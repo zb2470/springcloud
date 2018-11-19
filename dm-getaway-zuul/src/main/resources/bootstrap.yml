@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: dm-getaway-zuul
+  cloud:
+    config:
+      uri: http://localhost:7900
+      profile: dev
+      label: master
+# config server 地址
+# application name + profile(dev开发，pro生产 ，test 测试)
+# 分支
